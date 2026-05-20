@@ -1,0 +1,45 @@
+# Triangle Coin Op — .htaccess
+# Basic security headers and asset caching for Hostinger shared hosting
+
+# Default to index.php
+DirectoryIndex index.php index.html
+
+# Custom error page
+ErrorDocument 404 /404.php
+
+# Hide includes directory from direct browsing
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^includes/.* - [F,L]
+</IfModule>
+
+# Cache static assets aggressively
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg       "access plus 1 month"
+  ExpiresByType image/png        "access plus 1 month"
+  ExpiresByType image/webp       "access plus 1 month"
+  ExpiresByType image/svg+xml    "access plus 1 month"
+  ExpiresByType video/mp4        "access plus 1 month"
+  ExpiresByType text/css         "access plus 1 week"
+  ExpiresByType text/javascript  "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType font/woff2       "access plus 1 year"
+</IfModule>
+
+# Compress text responses
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript text/javascript application/json text/xml application/xml
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Block access to config and dotfiles
+<FilesMatch "^\.|config\.php$">
+  Require all denied
+</FilesMatch>

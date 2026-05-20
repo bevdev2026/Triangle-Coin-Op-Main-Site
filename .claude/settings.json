@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(winget install PHP.PHP.8.3 --accept-source-agreements --accept-package-agreements --disable-interactivity --silent 2>&1)",
+      "PowerShell($php = Get-ChildItem \"$env:LOCALAPPDATA\\\\Microsoft\\\\WinGet\\\\Packages\" -Filter \"php.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1; if \\($php\\) { $php.FullName; & $php.FullName -v } else { \"not found\" })",
+      "PowerShell($php = \"C:\\\\Users\\\\steve\\\\AppData\\\\Local\\\\Microsoft\\\\WinGet\\\\Packages\\\\PHP.PHP.8.3_Microsoft.Winget.Source_8wekyb3d8bbwe\\\\php.exe\"; $dir = \"c:\\\\Users\\\\steve\\\\OneDrive\\\\Desktop\\\\vuk-pinball-parlor\\\\vuk-pinball-parlor\"; & $php -S 127.0.0.1:8765 -t $dir)",
+      "PowerShell(try { $r = Invoke-WebRequest \"http://127.0.0.1:8765/index.php\" -UseBasicParsing -TimeoutSec 10; \"STATUS: $\\($r.StatusCode\\)  LENGTH: $\\($r.Content.Length\\)\" } catch { \"ERROR: $\\($_.Exception.Message\\)\" })",
+      "PowerShell($chrome = \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; $out = \"C:\\\\Users\\\\steve\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\vuk-shots\"; $a = @\\(\"--headless=old\",\"--disable-gpu\",\"--no-sandbox\",\"--hide-scrollbars\",\"--window-size=1440,900\",\"--screenshot=$out\\\\test-old.png\",\"http://127.0.0.1:8765/leagues.php\"\\); Start-Process -FilePath $chrome -ArgumentList $a -Wait -NoNewWindow; if \\(Test-Path \"$out\\\\test-old.png\"\\) { Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"$out\\\\test-old.png\"\\); \"test-old.png {0}x{1}\" -f $img.Width,$img.Height; $img.Dispose\\(\\) } else { \"not created\" })",
+      "Read(//c/Users/steve/AppData/Local/Temp/claude/vuk-shots/**)"
+    ]
+  }
+}
