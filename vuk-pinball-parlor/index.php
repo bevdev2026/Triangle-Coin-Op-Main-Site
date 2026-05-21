@@ -23,10 +23,10 @@ require_once 'includes/header.php';
 
   <div class="hero-inner">
     <div class="hero-eyebrow"><?= htmlspecialchars($SITE['residency']) ?></div>
-    <h1 class="hero-title">THE <?= strtoupper(htmlspecialchars($SITE['brand'])) ?></h1>
+    <h1 class="hero-title"><?= htmlspecialchars($SITE['brand']) ?></h1>
     <p class="hero-tagline">Masterfully Engineered Entertainment</p>
     <div class="hero-buttons">
-      <a href="leagues.php" class="btn btn-primary">Durham League Nights</a>
+      <a href="leagues.php" class="btn btn-primary">Events</a>
       <a href="venue-operations.php" class="btn btn-ghost">Host a Machine</a>
     </div>
   </div>
@@ -37,23 +37,40 @@ require_once 'includes/header.php';
      ============================================================ -->
 <section class="section section-dark">
   <div class="container">
-    <div class="grid-2">
-      <div>
-        <img src="assets/images/hero-foreground.png"
-             alt="Triangle Coin Op brass mechanism focal graphic"
-             style="border-radius: var(--radius-lg); box-shadow: var(--shadow-deep);">
-      </div>
-      <div>
-        <span class="section-tag">01 — The Residency</span>
-        <h2 class="section-title">Fullsteam Brewery Residency</h2>
-        <p class="section-desc">
-          Join us in Durham for curated pinball, recurring league nights, and craft pints.
-          Whether you are a grand champion or stepping up to the flippers for the first time,
-          our machines are dialed in for peak performance.
-        </p>
-        <a href="leagues.php" class="btn btn-primary btn-pill">View Current Roster</a>
+    <div class="section-intro">
+      <span class="section-tag">Legacy Residencies</span>
+      <h2 class="section-title">RDC Locations</h2>
+        Whether you are a grand champion or stepping up to the flippers for the first time,
+        our machines are dialed in for peak performance.
+      </p>
+    </div>
+
+    <div class="icon-carousel" aria-label="Legacy residencies carousel">
+      <div class="icon-carousel-track">
+        <div class="icon-card">
+          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
+          <p class="icon-card-title">Classic Machines</p>
+        </div>
+        <div class="icon-card">
+          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
+          <p class="icon-card-title">League History</p>
+        </div>
+        <div class="icon-card">
+          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
+          <p class="icon-card-title">Venue Partners</p>
+        </div>
+        <div class="icon-card">
+          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
+          <p class="icon-card-title">Curated Gear</p>
+        </div>
+        <div class="icon-card">
+          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
+          <p class="icon-card-title">Community Events</p>
+        </div>
       </div>
     </div>
+
+    <a href="leagues.php" class="btn btn-primary btn-pill">View Current Roster</a>
   </div>
 </section>
 

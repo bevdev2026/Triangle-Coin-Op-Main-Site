@@ -13,7 +13,7 @@ $SITE = [
     'venue_email'   => 'steve@optidynamics.org',     // B2B form recipient
     'public_email'  => 'hello@trianglecoinop.com',   // change to real address
     'location'      => 'Durham, North Carolina',
-    'residency'     => 'Fullsteam Brewery, Durham, NC',
+    'residency'     => 'It Only Takes One, With',
     'amazon_url'    => '#',                           // paste Amazon storefront URL
     'pod_url'       => '#',                           // paste Print-on-Demand store URL
     'year'          => date('Y'),
@@ -29,6 +29,7 @@ $PAGE = [
 // Nav structure — single source of truth for header + footer
 $NAV = [
     ['label' => 'Leagues',          'href' => 'leagues.php',           'slug' => 'leagues'],
+    ['label' => 'Roster',           'href' => 'roster.php',            'slug' => 'roster'],
     ['label' => 'The Mercantile',   'href' => 'mercantile.php',        'slug' => 'mercantile'],
     ['label' => 'Venue Operations', 'href' => 'venue-operations.php',  'slug' => 'venue'],
 ];
