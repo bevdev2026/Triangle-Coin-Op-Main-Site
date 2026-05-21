@@ -12,7 +12,7 @@ Drop your image files into this folder using these exact filenames. They are alr
 | `hero-foreground.png`    | Macro brass mechanism / focal graphic.                   | 1200 × 1200, transparent BG |
 | `divider-1.png`          | Section divider — pipes, brass border, riveted strip.    | 1200 × 80, transparent BG  |
 | `divider-2.png`          | Second divider variant for visual rhythm.                | 1200 × 80, transparent BG  |
-| `footer-bg.png`          | Footer scene — factory floor understructure.             | 1920 × 600                 |
+| `footer-bg.png`          | Footer scene — served by `hero-bg.png` via CSS (`background-size: 100% 300%; background-position: center bottom`). No separate file needed. | — |
 
 ## Available — drop in if you want to wire them up
 

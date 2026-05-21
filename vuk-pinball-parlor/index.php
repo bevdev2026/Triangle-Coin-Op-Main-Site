@@ -41,7 +41,6 @@ require_once 'includes/header.php';
       <div>
         <img src="assets/images/hero-foreground.png"
              alt="Triangle Coin Op brass mechanism focal graphic"
-             onerror="this.onerror=null;this.src='assets/images/placeholder-mechanism.svg'"
              style="border-radius: var(--radius-lg); box-shadow: var(--shadow-deep);">
       </div>
       <div>
@@ -63,8 +62,7 @@ require_once 'includes/header.php';
      ============================================================ -->
 <section class="section">
   <div class="container">
-    <img src="assets/images/divider-1.png" alt="" class="divider-graphic" aria-hidden="true"
-         onerror="this.onerror=null;this.src='assets/images/placeholder-divider.svg'">
+    <img src="assets/images/divider-1.png" alt="" class="divider-graphic" aria-hidden="true">
 
     <div class="text-center mb-xl">
       <span class="section-tag">02 — The Mercantile</span>
@@ -89,8 +87,7 @@ require_once 'includes/header.php';
       </div>
     </div>
 
-    <img src="assets/images/divider-2.png" alt="" class="divider-graphic" aria-hidden="true"
-         onerror="this.onerror=null;this.src='assets/images/placeholder-divider.svg'">
+    <img src="assets/images/divider-2.png" alt="" class="divider-graphic" aria-hidden="true">
   </div>
 </section>
 

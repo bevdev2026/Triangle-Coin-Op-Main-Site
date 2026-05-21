@@ -33,8 +33,7 @@ require_once 'includes/header.php';
       <div class="frame" id="amazon">
         <img src="assets/images/hero-foreground.png"
              alt="Curated parts and accessories"
-             class="frame-image" loading="lazy"
-             onerror="this.onerror=null;this.src='assets/images/placeholder-mechanism.svg'">
+             class="frame-image" loading="lazy">
         <span class="section-tag" style="margin-bottom: var(--space-sm)">01 — Curated</span>
         <h2 class="frame-title">The Amazon Collection</h2>
         <p class="frame-body">
@@ -50,8 +49,7 @@ require_once 'includes/header.php';
       <div class="frame" id="apparel">
         <img src="assets/images/hero-foreground.png"
              alt="Branded apparel and uniforms"
-             class="frame-image" loading="lazy"
-             onerror="this.onerror=null;this.src='assets/images/placeholder-mechanism.svg'">
+             class="frame-image" loading="lazy">
         <span class="section-tag" style="margin-bottom: var(--space-sm)">02 — Apparel</span>
         <h2 class="frame-title">Apparel &amp; Uniforms</h2>
         <p class="frame-body">

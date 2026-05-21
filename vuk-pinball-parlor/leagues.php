@@ -109,8 +109,7 @@ require_once 'includes/header.php';
       <?php for ($i = 1; $i <= 6; $i++): ?>
         <div class="machine-card">
           <img src="assets/images/hero-foreground.png" alt="Machine <?= $i ?>" class="machine-card-image"
-               loading="lazy"
-               onerror="this.onerror=null;this.src='assets/images/placeholder-mechanism.svg'">
+               loading="lazy">
           <div class="machine-card-body">
             <div class="machine-card-meta">Machine #<?= str_pad($i,2,'0',STR_PAD_LEFT) ?></div>
             <h3 class="machine-card-title">Replace with Title</h3>

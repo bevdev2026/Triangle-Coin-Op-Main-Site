@@ -504,9 +504,9 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--ivory); letter-s
 .site-footer {
   position: relative;
   background-color: var(--void);
-  background-image: url('../images/footer-bg.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../images/hero-bg.png');
+  background-size: 100% 300%;
+  background-position: center bottom;
   padding: var(--space-2xl) 0 var(--space-lg);
   border-top: 1px solid rgba(200,165,52,0.15);
   margin-top: var(--space-2xl);
