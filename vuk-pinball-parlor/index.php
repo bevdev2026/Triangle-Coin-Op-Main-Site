@@ -104,7 +104,6 @@ require_once 'includes/header.php';
       </div>
     </div>
 
-    <img src="assets/images/divider-2.png" alt="" class="divider-graphic" aria-hidden="true">
   </div>
 </section>
 
