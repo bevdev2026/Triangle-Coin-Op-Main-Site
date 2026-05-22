@@ -29,7 +29,6 @@ $PAGE = [
 // Nav structure — single source of truth for header + footer
 $NAV = [
     ['label' => 'Leagues',          'href' => 'leagues.php',           'slug' => 'leagues'],
-    ['label' => 'Roster',           'href' => 'roster.php',            'slug' => 'roster'],
     ['label' => 'The Mercantile',   'href' => 'mercantile.php',        'slug' => 'mercantile'],
     ['label' => 'Venue Operations', 'href' => 'venue-operations.php',  'slug' => 'venue'],
 ];

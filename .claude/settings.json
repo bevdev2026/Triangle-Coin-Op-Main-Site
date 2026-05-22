@@ -12,7 +12,10 @@
       "Bash(Sort-Object FullName)",
       "Bash(git add *)",
       "Bash(git rm *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(curl -s \"https://qfloxznnkygxoalpgipl.supabase.co/rest/v1/locations?limit=3\" -H \"apikey: sb_publishable_kQD_2g30zSyg8w9j1qou_w_z1ggKSxd\" -H \"Authorization: Bearer sb_publishable_kQD_2g30zSyg8w9j1qou_w_z1ggKSxd\")",
+      "Bash(curl -s \"https://qfloxznnkygxoalpgipl.supabase.co/rest/v1/machines?select=*&is_archived=eq.false&order=name.asc\" -H \"apikey: sb_publishable_kQD_2g30zSyg8w9j1qou_w_z1ggKSxd\" -H \"Authorization: Bearer sb_publishable_kQD_2g30zSyg8w9j1qou_w_z1ggKSxd\")",
+      "Bash(curl -s \"https://qfloxznnkygxoalpgipl.supabase.co/rest/v1/locations?select=*&order=name.asc\" -H \"apikey: sb_publishable_kQD_2g30zSyg8w9j1qou_w_z1ggKSxd\" -H \"Authorization: Bearer sb_publishable_kQD_2g30zSyg8w9j1qou_w_z1ggKSxd\")"
     ]
   }
 }

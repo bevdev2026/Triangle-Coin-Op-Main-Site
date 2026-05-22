@@ -1,8 +1,8 @@
 <?php
 require_once 'includes/config.php';
 $PAGE = [
-  'title'       => 'Leagues & Locations — ' . $SITE['brand'],
-  'description' => 'Durham pinball league nights at Fullsteam Brewery. Schedule, registration, and current machine roster.',
+  'title'       => 'Leagues — ' . $SITE['brand'],
+  'description' => 'Durham pinball league nights at Fullsteam Brewery. Schedule and registration.',
   'slug'        => 'leagues',
 ];
 require_once 'includes/header.php';
@@ -23,7 +23,7 @@ require_once 'includes/header.php';
   <div class="hero-inner">
     <div class="hero-eyebrow">The Player's Guide</div>
     <h1 class="hero-title">Durham Leagues</h1>
-    <p class="hero-tagline">Schedule · Standings · Machines</p>
+    <p class="hero-tagline">Schedule · Standings</p>
   </div>
 </section>
 
@@ -89,36 +89,5 @@ require_once 'includes/header.php';
   </div>
 </section>
 
-<!-- ============================================================
-     MACHINE ROSTER
-     ============================================================ -->
-<section class="section section-dark">
-  <div class="container">
-    <div class="divider"></div>
-
-    <div class="text-center mb-xl">
-      <span class="section-tag">03 — Current Roster</span>
-      <h2 class="section-title">Machines on Location</h2>
-      <p class="section-desc" style="margin-left:auto;margin-right:auto">
-        The current lineup at Fullsteam, dialed in by hand. Roster rotates seasonally.
-      </p>
-    </div>
-
-    <div class="grid-3">
-      <!-- TODO: replace placeholder cards with real machine data -->
-      <?php for ($i = 1; $i <= 6; $i++): ?>
-        <div class="machine-card">
-          <img src="assets/images/hero-foreground.png" alt="Machine <?= $i ?>" class="machine-card-image"
-               loading="lazy">
-          <div class="machine-card-body">
-            <div class="machine-card-meta">Machine #<?= str_pad($i,2,'0',STR_PAD_LEFT) ?></div>
-            <h3 class="machine-card-title">Replace with Title</h3>
-            <p class="machine-card-desc">Short rule, era, or feature note. Spectral italic feels right here.</p>
-          </div>
-        </div>
-      <?php endfor; ?>
-    </div>
-  </div>
-</section>
 
 <?php require_once 'includes/footer.php'; ?>

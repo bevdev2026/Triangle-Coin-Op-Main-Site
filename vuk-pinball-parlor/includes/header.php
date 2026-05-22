@@ -44,7 +44,9 @@ $page_url = $base_url . strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
 
 <header class="site-header" id="siteHeader">
   <div class="container">
-    <a href="index.php" class="site-logo"><?= htmlspecialchars($SITE['brand']) ?></a>
+    <a href="index.php" class="site-logo">
+      <img src="assets/images/1777836309592.png" alt="Triangle Coin Op logo emblem">
+    </a>
 
     <!-- CSS-only mobile menu toggle (works without JavaScript) -->
     <input type="checkbox" id="navState" class="nav-state" aria-label="Toggle navigation menu">
