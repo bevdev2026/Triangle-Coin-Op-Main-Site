@@ -745,3 +745,62 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--ivory); letter-s
 @media (max-width: 720px) {
   .map-wrap { aspect-ratio: 4 / 3; }
 }
+
+/* ---------- Territory Card ---------- */
+.territory-card {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  max-width: 780px;
+  margin: 0 auto var(--space-xl);
+}
+.territory-cities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+}
+.territory-city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.territory-city strong {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.territory-glyph {
+  font-size: 1.5rem;
+  color: var(--copper-bright);
+  line-height: 1;
+}
+.territory-divider {
+  font-size: 1rem;
+  color: var(--copper-mid);
+  opacity: 0.6;
+  padding-bottom: 4px;
+}
+.territory-body {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  color: var(--parchment);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+.territory-motto {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--copper-bright);
+}
+@media (max-width: 540px) {
+  .territory-divider { display: none; }
+  .territory-cities { gap: var(--space-sm); }
+}
+

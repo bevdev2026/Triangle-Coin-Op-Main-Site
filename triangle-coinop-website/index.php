@@ -26,7 +26,7 @@ require_once 'includes/header.php';
     <h1 class="hero-title"><?= htmlspecialchars($SITE['brand']) ?></h1>
     <p class="hero-tagline">Masterfully Engineered Entertainment</p>
     <div class="hero-buttons">
-      <a href="leagues.php" class="btn btn-primary">Events</a>
+      <a href="mercantile.php" class="btn btn-primary">Pinball Gifts &amp; Swag</a>
       <a href="venue-operations.php" class="btn btn-ghost">Host a Machine</a>
     </div>
   </div>
@@ -38,39 +38,36 @@ require_once 'includes/header.php';
 <section class="section section-dark">
   <div class="container">
     <div class="section-intro">
-      <span class="section-tag">Legacy Residencies</span>
-      <h2 class="section-title">RDC Locations</h2>
-        Whether you are a grand champion or stepping up to the flippers for the first time,
-        our machines are dialed in for peak performance.
-      </p>
+      <span class="section-tag">Where We Live</span>
+      <h2 class="section-title">The Triangle</h2>
     </div>
 
-    <div class="icon-carousel" aria-label="Legacy residencies carousel">
-      <div class="icon-carousel-track">
-        <div class="icon-card">
-          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
-          <p class="icon-card-title">Classic Machines</p>
+    <div class="frame territory-card">
+      <div class="territory-cities">
+        <div class="territory-city">
+          <span class="territory-glyph">⚙</span>
+          <strong>Raleigh</strong>
         </div>
-        <div class="icon-card">
-          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
-          <p class="icon-card-title">League History</p>
+        <div class="territory-divider">◆</div>
+        <div class="territory-city">
+          <span class="territory-glyph">⚙</span>
+          <strong>Durham</strong>
         </div>
-        <div class="icon-card">
-          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
-          <p class="icon-card-title">Venue Partners</p>
-        </div>
-        <div class="icon-card">
-          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
-          <p class="icon-card-title">Curated Gear</p>
-        </div>
-        <div class="icon-card">
-          <img src="assets/images/bullet-icons.png" alt="Icon placeholder">
-          <p class="icon-card-title">Community Events</p>
+        <div class="territory-divider">◆</div>
+        <div class="territory-city">
+          <span class="territory-glyph">⚙</span>
+          <strong>Chapel Hill</strong>
         </div>
       </div>
+      <p class="territory-body">
+        Our machines turn up wherever good times
+        need a little more tilt — from Raleigh's buzzing corridors to Durham's warehouse
+        dives to Chapel Hill's corner haunts. Three cities. One obsession. Infinite replays.
+      </p>
+      <p class="territory-motto">Pull the plunger. Your quarter belongs here.</p>
     </div>
 
-    <a href="leagues.php" class="btn btn-primary btn-pill">View Current Roster</a>
+    <a href="leagues.php" class="btn btn-primary btn-pill">Find a Machine Near You</a>
   </div>
 </section>
 
