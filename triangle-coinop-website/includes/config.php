@@ -11,7 +11,7 @@ $SITE = [
     'parent_co'     => 'Triangle Coin Op LLC',
     'parent_url'    => 'https://unique.com',
     'venue_email'   => 'steve@optidynamics.org',     // B2B form recipient
-    'public_email'  => 'hello@trianglecoinop.com',   // change to real address
+    'public_email'  => 'steveB@trianglecoinop.com',
     'location'      => 'Durham, North Carolina',
     'residency'     => 'It Only Takes One, With',
     'amazon_url'    => '#',                           // paste Amazon storefront URL
@@ -30,5 +30,5 @@ $PAGE = [
 $NAV = [
     ['label' => 'Leagues',          'href' => 'leagues.php',           'slug' => 'leagues'],
     ['label' => 'The Mercantile',   'href' => 'mercantile.php',        'slug' => 'mercantile'],
-    ['label' => 'Venue Operations', 'href' => 'venue-operations.php',  'slug' => 'venue'],
+    ['label' => 'Host a Machine',   'href' => 'venue-operations.php',  'slug' => 'venue'],
 ];
