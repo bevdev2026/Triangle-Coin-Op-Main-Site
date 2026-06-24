@@ -1,7 +1,7 @@
 <?php
 require_once 'includes/config.php';
 $PAGE = [
-  'title'       => $SITE['brand'] . ' — ' . $SITE['tagline'],
+  'title'       => $SITE['brand'] . ': ' . $SITE['tagline'],
   'description' => 'Masterfully maintained pinball. League nights at Fullsteam Brewery, Durham NC. Curated machines, exclusive gear, venue partnerships.',
   'slug'        => 'home',
 ];
@@ -61,7 +61,7 @@ require_once 'includes/header.php';
       </div>
       <p class="territory-body">
         Our machines turn up wherever good times
-        need a little more tilt — from Raleigh's buzzing corridors to Durham's warehouse
+        need a little more tilt, from Raleigh's buzzing corridors to Durham's warehouse
         dives to Chapel Hill's corner haunts. Three cities. One obsession. Infinite replays.
       </p>
       <p class="territory-motto">Pull the plunger. Your quarter belongs here.</p>
@@ -79,7 +79,7 @@ require_once 'includes/header.php';
     <img src="assets/images/divider-1.png" alt="" class="divider-graphic" aria-hidden="true">
 
     <div class="text-center mb-xl">
-      <span class="section-tag">02 — The Mercantile</span>
+      <span class="section-tag">02: The Mercantile</span>
       <h2 class="section-title">Curated Goods &amp; League Gear</h2>
     </div>
 
@@ -107,16 +107,16 @@ require_once 'includes/header.php';
 <!-- ============================================================
      BLOCK 4: VENUE PARTNERSHIP (B2B Teaser)
      ============================================================ -->
-<section class="section section-steel">
+<section class="section section-dark">
   <div class="container">
     <div class="text-center">
-      <span class="section-tag">03 — Venue Operations</span>
-      <h2 class="section-title" style="color: var(--steel-pale);">Coin-Op Architecture for Your Venue</h2>
-      <p class="section-desc" style="margin-left:auto;margin-right:auto;color:var(--steel-pale);opacity:0.85;">
-        <?= htmlspecialchars($SITE['parent_co']) ?> provides premium, zero-maintenance pinball placements
-        for high-traffic commercial spaces. Curated machines, professional service, league-night foot traffic.
+      <span class="section-tag">03: Venue Operations</span>
+      <h2 class="section-title">A Machine in Your Corner</h2>
+      <p class="section-desc" style="margin-left:auto;margin-right:auto;">
+        We partner with bars, breweries, and venues across the Triangle to place and maintain
+        curated machines. You bring the space; we handle everything else.
       </p>
-      <a href="venue-operations.php" class="btn btn-steel btn-pill">Venue Operations</a>
+      <a href="venue-operations.php" class="btn btn-primary btn-pill">Let's Talk Partnership</a>
     </div>
   </div>
 </section>
